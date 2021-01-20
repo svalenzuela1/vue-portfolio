@@ -35,17 +35,19 @@ export default {
 
 <style>
 .home{
-  padding: 30px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 10%;
 }
 
 .name{
   font-size: x-large;
 }
 
-#fieldset1{
-  padding-left: 300px;
-  padding-right: 300px;
-}
+/*#fieldset1{*/
+/*  padding-left: 300px;*/
+/*  padding-right: 300px;*/
+/*}*/
 
 .portfolioimg{
   height: 30%;

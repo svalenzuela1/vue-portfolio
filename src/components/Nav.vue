@@ -63,6 +63,6 @@ color: navy;
 }
 
 .nav{
-  padding: 20px;
+  padding: 10%;
 }
 </style>
