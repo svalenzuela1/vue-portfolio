@@ -1,13 +1,24 @@
 <template>
   <div id="app" class="has-background-link-dark">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+<!--      <router-link to="/">Home</router-link> |-->
+<!--      <router-link to="/about">About</router-link>-->
     </div>
+    <Nav/>
+    <Icons/>
     <router-view/>
   </div>
 </template>
-
+<script>
+import Nav from './components/Nav.vue'
+import Icons from './components/Icons.vue'
+export default {
+  name: 'App',
+  components:{
+    Nav, Icons
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

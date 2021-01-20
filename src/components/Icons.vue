@@ -19,4 +19,27 @@ export default {
 </script>
 
 <style>
+.logo{
+  height: 100px;
+  width: 100px;
+  background-color: white;
+}
+
+.icons{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  position: fixed;
+}
+
+.icons::after{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: black;
+}
+
 </style>
