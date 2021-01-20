@@ -15,6 +15,16 @@
     </div>
     <div class="about">
 
+      <img class="portfolioimg" src="https://res.cloudinary.com/stephaniev/image/upload/v1602111407/IMG_2375_sv00u0.jpg" alt="image">
+      <h3 id="aboutMe">Hi, my name is </h3>
+      <h1 class="name"> STEPHANIE VALENZUELA</h1>
+      <fieldset class="fieldset1"> <legend> WHO AM I?</legend>
+        <p> A Junior Developer who is driven to make an impact in the tech community.
+          As a child of immigrants and a first generation College graduate, I joined
+          TechHire Open Code four days after graduating college to pursue Software Development. I am passionate about
+          logical thinking and problem-solving, constantly in pursuit of gaining more
+          knowledge.</p>
+      </fieldset>
     </div>
   </div>
 </template>
@@ -57,8 +67,7 @@ template{
   margin: 0px auto;
   background-color: black;
 }
-/*.about{*/
-/*  display: flex;*/
-/*  justify-content: flex-start;*/
+/*.fieldset1 {*/
+/*  width: 100px;*/
 /*}*/
 </style>
