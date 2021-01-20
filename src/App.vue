@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="has-background-link-dark">
     <div id="nav">
-<!--      <router-link to="/">Home</router-link> |-->
-<!--      <router-link to="/about">About</router-link>-->
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
     </div>
     <Nav/>
     <Icons/>
@@ -39,5 +39,9 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+Nav{
+  padding: 50px;
 }
 </style>
