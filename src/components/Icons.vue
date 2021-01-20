@@ -2,7 +2,7 @@
   <div class="icons">
 
     <a target="_blank" href="https://github.com/svalenzuela1">
-      <img class="logo" src="https://cdn3.iconfinder.com/data/icons/inficons/512/github.png">
+      <img class="logo" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-512.png">
     </a>
 
 
@@ -22,14 +22,13 @@ export default {
 .logo{
   height: 100px;
   width: 100px;
-  background-color: white;
 }
 
 .icons{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px;
+  padding: 50px;
   position: fixed;
 }
 

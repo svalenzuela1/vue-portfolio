@@ -1,6 +1,6 @@
 <template class="nav">
-  <b-navbar>
-    <template #brand>
+  <b-navbar class="has-background-link-dark"> <!--class gives it color: NOTE CHANGE COLOR LATER-->
+    <template #brand class="try">
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <img
             src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
@@ -50,6 +50,10 @@
     </script>
 
 <style>
+.try{
+color: navy;
+}
+
 .nav{
   padding: 20px;
 }
