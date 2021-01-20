@@ -2,37 +2,36 @@
   <b-navbar class="has-background-link-dark"> <!--class gives it color: NOTE CHANGE COLOR LATER-->
     <template #brand class="try">
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
-        <img
-            src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
-            alt="Lightweight UI components for Vue.js based on Bulma"
-        >
+<!--        <img-->
+<!--            src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"-->
+<!--            alt="Lightweight UI components for Vue.js based on Bulma"-->
+<!--        >-->
       </b-navbar-item>
     </template>
     <template #start>
-      <b-navbar-item href="#">
+      <router-link to="/">
+      <b-navbar-item href="#" class="navbar-item">
         Home
       </b-navbar-item>
+    </router-link>
+      <router-link to="/projects">
       <b-navbar-item href="#">
-        Documentation
+        Projects
       </b-navbar-item>
-      <b-navbar-dropdown label="Info">
+      </router-link>
+
         <b-navbar-item href="#">
-          About
+          Contact Me
         </b-navbar-item>
-        <b-navbar-item href="#">
-          Contact
-        </b-navbar-item>
-      </b-navbar-dropdown>
+
     </template>
 
     <template #end>
       <b-navbar-item tag="div">
         <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">
-            Log in
+
+          <a class="resume-link" type="is-primary is-light" href="https://drive.google.com/file/d/1TAj2-vJIDwMgDhTHkAuQrWNHPoCg812z/view">
+            Resume
           </a>
         </div>
       </b-navbar-item>
@@ -50,6 +49,13 @@
     </script>
 
 <style>
+.navbar-item{
+  font-size: x-large;
+  color: white;
+}
+.resume-link{
+  font-size: x-large;
+}
 .try{
 color: navy;
 }

@@ -20,8 +20,8 @@ export default {
 
 <style>
 .logo{
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 .icons{
@@ -36,7 +36,7 @@ export default {
   content: "";
   display: block;
   width: 1px;
-  height: 90px;
+  height: 100px;
   margin: 0px auto;
   background-color: black;
 }

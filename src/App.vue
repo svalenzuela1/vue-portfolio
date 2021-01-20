@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="has-background-link-dark"> <!--NOTE: CHANGE COLOR LATER-->
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+<!--      <router-link to="/">Home</router-link> |-->
+      <router-link to="/about"></router-link>
     </div>
     <Nav/>
     <Icons/>
