@@ -31,7 +31,7 @@
       <b-navbar-item tag="div">
         <div class="buttons">
 
-          <a class="resume-link" type="is-primary is-light" href="https://drive.google.com/file/d/1TAj2-vJIDwMgDhTHkAuQrWNHPoCg812z/view">
+          <a target="_blank" class="resume-link" type="is-primary is-light" href="https://drive.google.com/file/d/1TAj2-vJIDwMgDhTHkAuQrWNHPoCg812z/view">
             Resume
           </a>
         </div>
@@ -50,6 +50,7 @@
     </script>
 
 <style>
+<
 .navbar-item{
   font-size: x-large;
   color: white;

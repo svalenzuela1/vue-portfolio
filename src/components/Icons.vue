@@ -17,8 +17,9 @@ export default {
   name: 'Icons',
 }
 </script>
-
 <style>
+@media only screen and (min-width: 1024px) {
+
 .logo{
   height: 80px;
   width: 80px;
@@ -40,5 +41,6 @@ export default {
   margin: 0px auto;
   background-color: black;
 }
-
+}
+@media only screen and (max-width: 1023px) { .icons{visibility: hidden;}}
 </style>
