@@ -19,10 +19,11 @@
         Projects
       </b-navbar-item>
       </router-link>
-
+      <router-link to="/contact">
         <b-navbar-item href="#">
           Contact Me
         </b-navbar-item>
+      </router-link>
 
     </template>
 
