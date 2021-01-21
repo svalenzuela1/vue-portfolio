@@ -1,9 +1,9 @@
 <template>
   <div id="app" class="has-background-link-dark"> <!--NOTE: CHANGE COLOR LATER-->
-    <div id="nav">
-<!--      <router-link to="/">Home</router-link> |-->
-      <router-link to="/about"></router-link>
-    </div>
+<!--    <div id="nav">-->
+<!--&lt;!&ndash;      <router-link to="/">Home</router-link> |&ndash;&gt;-->
+<!--      <router-link to="/about"></router-link>-->
+<!--    </div>-->
     <Nav/>
     <Icons/>
     <router-view/>
@@ -28,9 +28,9 @@ export default {
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-}
+/*#nav {*/
+/*  padding: 30px;*/
+/*}*/
 
 #nav a {
   font-weight: bold;

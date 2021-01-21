@@ -10,7 +10,7 @@
 <!--      <div id="fieldset1">-->
         <h3 class="name">Hi, my name is </h3>
         <h1 class="name"> STEPHANIE VALENZUELA</h1>
-      <fieldset class="name"> <legend> WHO AM I?</legend>
+      <fieldset class="fieldset2"> <legend> WHO AM I?</legend>
         <p id="fieldset1"> A Junior Developer who is driven to make an impact in the tech community.
           As a child of immigrants and a first generation College graduate, I joined
           TechHire Open Code four days after graduating college to pursue Software Development. I am passionate about
@@ -40,8 +40,9 @@ export default {
   padding-bottom: 10%;
 }
 
-.name{
+.name, p, legend{
   font-size: x-large;
+  color: black;
 }
 
 /*#fieldset1{*/
@@ -52,5 +53,9 @@ export default {
 .portfolioimg{
   height: 30%;
   width: 30%;
+}
+
+.fieldset2{
+  border: black solid 2px;
 }
 </style>

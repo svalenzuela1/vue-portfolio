@@ -2,7 +2,7 @@
   <div class="icons">
 
     <a target="_blank" href="https://github.com/svalenzuela1">
-      <img class="logo" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-512.png">
+      <img class="logo" src="../assets/github.webp">
     </a>
 
 
@@ -42,5 +42,10 @@ export default {
   background-color: black;
 }
 }
-@media only screen and (max-width: 1023px) { .icons{visibility: hidden;}}
+@media only screen and (max-width: 1023px) {
+  .icons{
+    /*visibility: hidden;*/
+    display: none;
+  }
+}
 </style>

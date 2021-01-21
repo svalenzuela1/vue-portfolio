@@ -34,5 +34,6 @@ export default{
 .contact-sheet{
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 10%;
 }
 </style>
