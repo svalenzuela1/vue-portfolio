@@ -62,7 +62,7 @@
 
   .navbar-item {
     font-size: x-large;
-    color: white;
+    color: black;
   }
 
   .resume-link {
@@ -77,5 +77,9 @@
   .nav{
     padding: 20px;
   }
+
+  /*.navbar-item{*/
+  /*  border: black solid 2px;*/
+  /*}*/
 }
 </style>

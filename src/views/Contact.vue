@@ -1,6 +1,7 @@
 <template>
   <div class="contact-sheet">
   <section>
+    <form class="contact-form" @submit.prevent="sendEmail">
     <b-field horizontal label="Subject" type="is-danger" message="Please enter a subject">
       <b-input name="subject" expanded></b-input>
     </b-field>
@@ -16,17 +17,48 @@
 
     <b-field horizontal><!-- Label left empty for spacing -->
       <p class="control">
-        <b-button label="Send message" type="is-primary" />
+        <b-button v-on:click="sendEmail" label="Send message" type="is-primary" value="send" />
       </p>
     </b-field>
-
+    </form>
   </section>
   </div>
 </template>
 
 <script>
+import emailjs from 'emailjs-com';
+
 export default{
-  name: 'Contact'
+  name: 'Contact',
+  data() {
+    return {
+      subject: '',
+      name: '',
+      email: '',
+      message: ''
+    }
+  },
+  methods: {
+    sendEmail(e) {
+      try {
+        emailjs.sendForm('service_u1jml2x', 'template_hctlnqq', e.target,
+            'user_OdKcH5LzTxMskLqSISB0r', {
+              subject: this.subject,
+              name: this.name,
+              email: this.email,
+              message: this.message
+            })
+
+      } catch(error) {
+        console.log({error})
+      }
+      // Reset form field
+      this.subject = ''
+      this.name = ''
+      this.email = ''
+      this.message = ''
+    },
+  }
 }
 </script>
 
