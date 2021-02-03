@@ -1,23 +1,8 @@
 <template>
-  <form
-      name="ask-question"
-      method="post"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-  >
-    <input name="form-name" value="ask-question" />
-<!--    <label v-for="(panelist, index) in panelists" :key="index">-->
-<!--      <input-->
-<!--          type="radio"-->
-<!--          name="panelist"-->
-<!--          :value="panelist"-->
-<!--          @input="ev => updatePanelist"-->
-<!--          :checked="panelist === currentPanelist"-->
-<!--      />-->
-<!--      <span>{{ panelist }}</span>-->
-<!--    </label>-->
-<!--    ...-->
-    <button>Submit</button>
+  <form name="ask-question" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="radio" name="panelist" />
+    <textarea name="question"></textarea>
   </form>
 </template>
 
