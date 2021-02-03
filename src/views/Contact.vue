@@ -17,7 +17,7 @@
 
           <b-field horizontal><!-- Label left empty for spacing -->
             <p class="control">
-              <b-button  label="Send message" type="is-primary" value="send" />
+              <b-button  label="Send message" type="submit" value="send" />
             </p>
           </b-field>
         </form>
