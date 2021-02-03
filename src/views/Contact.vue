@@ -1,7 +1,7 @@
 <template>
     <div class="contact-sheet">
       <section>
-        <form class="contact-form" name="form" netlify>
+        <form class="contact-form" name="form" method="POST" data-netlify="true">
           <b-field horizontal label="Subject" type="is-danger" message="Please enter a subject">
             <b-input name="subject" expanded></b-input>
           </b-field>
