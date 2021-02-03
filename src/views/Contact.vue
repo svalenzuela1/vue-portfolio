@@ -1,25 +1,26 @@
 <template>
     <div class="contact-sheet">
       <section>
-        <form class="contact-form" name="form" method="POST" data-netlify="true">
-          <b-field horizontal label="Subject" type="is-danger" message="Please enter a subject">
-            <b-input name="subject" expanded></b-input>
-          </b-field>
-
-          <b-field horizontal label="From">
-            <b-input name="name" placeholder="Name" expanded></b-input>
-            <b-input name="email" type="email" placeholder="nobody@nowhere.com" expanded></b-input>
-          </b-field>
-
-          <b-field horizontal label="Message">
-            <b-input type="textarea"></b-input>
-          </b-field>
-
-          <b-field horizontal><!-- Label left empty for spacing -->
-            <p class="control">
-              <b-button  label="Send message" type="submit" value="send" />
-            </p>
-          </b-field>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>Your Role: <select name="role[]" multiple>
+              <option value="leader">Leader</option>
+              <option value="follower">Follower</option>
+            </select></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+            <input type="submit">
+          </p>
         </form>
       </section>
     </div>
