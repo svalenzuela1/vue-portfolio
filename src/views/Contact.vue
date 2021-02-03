@@ -5,21 +5,22 @@
       data-netlify="true"
       data-netlify-honeypot="bot-field"
   >
-    <input type="hidden" name="form-name" value="ask-question" />
-    <label v-for="(panelist, index) in panelists" :key="index">
-      <input
-          type="radio"
-          name="panelist"
-          :value="panelist"
-          @input="ev => updatePanelist"
-          :checked="panelist === currentPanelist"
-      />
-      <span>{{ panelist }}</span>
-    </label>
-    ...
+    <input name="form-name" value="ask-question" />
+<!--    <label v-for="(panelist, index) in panelists" :key="index">-->
+<!--      <input-->
+<!--          type="radio"-->
+<!--          name="panelist"-->
+<!--          :value="panelist"-->
+<!--          @input="ev => updatePanelist"-->
+<!--          :checked="panelist === currentPanelist"-->
+<!--      />-->
+<!--      <span>{{ panelist }}</span>-->
+<!--    </label>-->
+<!--    ...-->
     <button>Submit</button>
   </form>
 </template>
+
 <script>
 export default {
   name: "Contact",
