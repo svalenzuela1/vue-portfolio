@@ -1,9 +1,9 @@
 <template>
-  <form name="ask-question" netlify netlify-honeypot="bot-field">
+  <form name="ask-question" netlify netlify-honeypot="bot-field" hidden>
     <input type="text" name="name" />
     <input type="email" name="email" />
     <textarea name="message"></textarea>
-    <button type="submit" value="send"></button>
+    <button type="submit" value="send">Submit</button>
   </form>
 </template>
 
