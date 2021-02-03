@@ -18,7 +18,7 @@
             <label>Message: <textarea name="message"></textarea></label>
           </p>
           <p>
-            <button type="submit">Send</button>
+<!--            <button type="submit">Send</button>-->
             <input type="submit">
           </p>
         </form>
