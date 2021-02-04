@@ -7,7 +7,9 @@
         <input type="email" name="user_email">
         <label>Message</label>
         <textarea name="message"></textarea>
-        <input type="submit" value="Send">
+
+
+        <input type="submit" value="Send" v-on:click="$router.push('/thanks')">
       </form>
   </div>
     </template>
@@ -20,11 +22,21 @@ export default {
   methods: {
     sendEmail: (e) => {
       emailjs.sendForm('service_u1jml2x', 'template_hctlnqq', e.target, 'user_OdKcH5LzTxMskLqSISB0r')
-          .then((result) => {
-            console.log('SUCCESS!', result.status, result.text);
-          }, (error) => {
-            console.log('FAILED...', error);
-          });
+
+      this.$router.push('/thanks')
+
+      // .then((result) => {
+      //   console.log('SUCCESS!', result.status, result.text);
+      //   this.$router.push('thanks')
+      // }, (error) => {
+      //   console.log('FAILED...', error);
+      //   this.$router.push('404')
+      // });
+
+      this.user_name = ''
+      this.user_email = ''
+      this.message = ''
+
     }
   }
 }
