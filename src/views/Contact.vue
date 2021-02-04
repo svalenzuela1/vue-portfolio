@@ -1,16 +1,7 @@
 <template>
   <div>
   <form name="form" netlify>
-    <label v-for="(panelist, index) in panelists" :key="index">
-      <input
-          type="radio"
-          name="panelist"
-          @input="ev => form.askPerson = ev.target.value"
-          :value="panelist"
-          :checked="form.askPerson === panelist"
-      />
-      <span>{{ panelist }}</span>
-    </label>
+<input name="name" placeholder="name">
   </form>
     <button v-on:click="handleSubmit">Submit</button>
   </div>
