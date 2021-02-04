@@ -2,8 +2,8 @@
   <div>
   <form name="form" netlify>
 <input name="name" placeholder="name">
-  </form>
     <button v-on:click="handleSubmit">Submit</button>
+  </form>
   </div>
 </template>
 <script>
