@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Projects from '../views/Projects.vue'
 import Contact from '../views/Contact.vue'
+import Successful from "../views/Successful"
+import SubmissionFail from '../views/Failure'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -24,6 +27,16 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact,
+  },
+  {
+    path: '/thanks',
+    name: 'Successful',
+    component: Successful
+  },
+  {
+    path: '/404',
+    name: 'Failure',
+    component: SubmissionFail
   }
 ]
 
