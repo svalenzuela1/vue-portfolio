@@ -4,7 +4,6 @@ import Home from '../views/Home.vue'
 import Projects from '../views/Projects.vue'
 import Contact from '../views/Contact.vue'
 import Successful from "../views/Successful"
-import SubmissionFail from '../views/Failure'
 
 Vue.use(VueRouter)
 
@@ -18,10 +17,6 @@ const routes = [
     path: '/projects',
     name: 'Projects',
     component: Projects,
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    // component: () => import(/* webpackChunkName: "about" */ '../views/Projects.vue')
   },
   {
     path: '/contact',
@@ -32,11 +27,6 @@ const routes = [
     path: '/thanks',
     name: 'Successful',
     component: Successful
-  },
-  {
-    path: '/404',
-    name: 'Failure',
-    component: SubmissionFail
   }
 ]
 
