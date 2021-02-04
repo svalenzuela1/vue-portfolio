@@ -1,7 +1,6 @@
 <template>
-  <form
-      ...
-      @submit.prevent="handleSubmit">
+  <div>
+  <form name="form" netlify>
     <label v-for="(panelist, index) in panelists" :key="index">
       <input
           type="radio"
@@ -12,8 +11,9 @@
       />
       <span>{{ panelist }}</span>
     </label>
-    ...
   </form>
+    <button v-on:click="handleSubmit">Submit</button>
+  </div>
 </template>
 <script>
 import axios from 'axios'
