@@ -4,7 +4,7 @@
 <!--    <HelloWorld msg="Welcome to Your Vue.js App"/>-->
 
 
-
+    <div class="about">
       <img class="portfolioimg" src="https://res.cloudinary.com/stephaniev/image/upload/v1602111407/IMG_2375_sv00u0.jpg" alt="image">
 
 <!--      <div id="fieldset1">-->
@@ -19,6 +19,21 @@
       </fieldset>
 <!--      </div>-->
     </div>
+
+  <div class="skillsets">
+
+    <field><legend>Skills</legend>
+      <section> <!-- :class="`hero is-medium is-${carousel.color}`" -->
+        <div>
+          <img src="../assets/icons8-python-48.png">
+          <img src="../assets/icons8-django-48.png">
+
+        </div>
+      </section>
+    </field>
+</div>
+
+  </div>
 </template>
 
 <script>
@@ -27,13 +42,23 @@
 
 export default {
   name: 'Home',
-  components: {
-
+  data(){
+    return {
+      skills: [
+      "../assets/rails-logo.png",
+          "../assets/icons8-python-48.png"
+      ]
+    }
   }
 }
 </script>
 
 <style>
+
+.skillsets, .about{
+  padding: 5%;
+}
+
 .home{
   padding-left: 20%;
   padding-right: 20%;
