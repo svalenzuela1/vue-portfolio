@@ -8,7 +8,7 @@
 <!--            src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"-->
 <!--            alt="Lightweight UI components for Vue.js based on Bulma"-->
 <!--        >-->
-
+<!--      <p>Made With</p> <img src="../assets/logo.png">-->
       </b-navbar-item>
     </template>
     <template #end>
@@ -29,7 +29,7 @@
         </b-navbar-item>
       </router-link>
       <b-navbar-item href="#">
-      <a target="_blank" class="resume-link" type="is-primary is-light" href="https://drive.google.com/file/d/1TAj2-vJIDwMgDhTHkAuQrWNHPoCg812z/view">
+      <a target="_blank" class="resume-link" type="is-primary is-light" href="https://drive.google.com/file/d/1j9TtTRf6_Lxn7vdExCoWwUmqwPs3_-C1/view?usp=sharing">
         Resume
       </a>
       </b-navbar-item>

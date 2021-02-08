@@ -28,7 +28,6 @@ export default {
 .icons{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 50px;
   position: fixed;
 }

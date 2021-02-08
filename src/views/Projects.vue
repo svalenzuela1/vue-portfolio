@@ -1,4 +1,5 @@
 <template>
+<div class="projects">
   <b-carousel>
     <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
       <section :class="`hero is-medium is-${carousel.color}`">
@@ -14,6 +15,7 @@
       </section>
     </b-carousel-item>
   </b-carousel>
+</div>
 </template>
 
 <script>
@@ -22,9 +24,9 @@ export default {
   data(){
     return {
       carousels: [
-        { image: 'https://media.giphy.com/media/tH65wGj3847chND7Kl/giphy.gif', text: 'Vooyage', color: 'primary', github: '', deployed: 'https://vooyage.netlify.app/'},
-        { image: 'https://res.cloudinary.com/stephaniev/image/upload/v1601577889/Screen_Shot_2020-10-01_at_12.22.36_AM_onnyki.png', text: 'Quiz Customizer', color: 'info', github: '', deployed: '', c: '../assets/logo.png'},
-        { image: 'https://res.cloudinary.com/stephaniev/image/upload/v1601581436/Screen_Shot_2020-10-01_at_3.43.22_PM_f8zusz.png', text: 'Savings Calculator', color: 'success', github: '', deployed: ''},
+        { image: 'https://media.giphy.com/media/tH65wGj3847chND7Kl/giphy.gif', text: 'Vooyage', color: 'primary', github: 'https://github.com/e-mbrown/project3-frontend', deployed: 'https://vooyage.netlify.app/'},
+        { image: 'https://media.giphy.com/media/6C0MtSCcYM88XsQx3R/giphy.gif', text: 'Quiz Customizer', color: 'info', github: 'https://github.com/svalenzuela1/p4backend', deployed: 'https://quiz-customizer.netlify.app/'},
+        { image: 'https://media.giphy.com/media/jf1CiNrQfa8bGuvDJd/giphy.gif', text: 'Savings Calculator', color: 'success', github: 'https://github.com/svalenzuela1/savings-calculator', deployed: 'https://sale-savings-calc.netlify.app/'},
         { image: '', text: 'Fahrenheit vs. Celsius', color: 'warning' },
         //{ text: 'Slide 5', color: 'danger' }
       ]
@@ -34,6 +36,7 @@ export default {
 </script>
 
 <style>
+
 
 .links{
   height: 100px;
