@@ -11,7 +11,7 @@
         <h3 class="name">Hi, my name is </h3>
         <h1 class="name"> STEPHANIE VALENZUELA</h1>
       <fieldset class="fieldset2"> <legend> WHO AM I?</legend>
-        <p id="fieldset1"> A Junior Developer who is driven to make an impact in the tech community.
+        <p class="descrip"> A Junior Developer who is driven to make an impact in the tech community.
           As a child of immigrants and a first generation College graduate, I joined
           TechHire Open Code four days after graduating college to pursue Software Development. I am passionate about
           logical thinking and problem-solving, constantly in pursuit of gaining more
@@ -22,18 +22,21 @@
 
   <div class="skillsets">
 
-    <fieldset class="fieldset2"><legend>Skills</legend>
+    <fieldset class="fieldset2"><legend>SKILLS</legend>
 <!--      <section> &lt;!&ndash; :class="`hero is-medium is-${carousel.color}`" &ndash;&gt;-->
         <div class="skillbox">
-          <img src="../assets/icons8-html-50.png">
-          <img src="../assets/icons8-css-50.png">
-          <img src="../assets/icons8-javascript-50.png">
-          <img src="../assets/icons8-vue-js-48.png">
-          <img src="../assets/icons8-jquery-50.png">
-          <img src="../assets/icons8-python-48.png">
-          <img src="../assets/icons8-django-48.png">
-          <img src="../assets/icons8-ruby-programming-language-50.png">
-
+          <img class="skillchecks" src="../assets/icons8-html-48.png">
+          <img class="skillchecks" src="../assets/icons8-css-48.png">
+          <img class="skillchecks" src="../assets/icons8-javascript-50.png">
+          <img class="skillchecks" src="../assets/icons8-vue-js-48.png">
+          <img class="skillchecks" src="../assets/icons8-jquery-50.png">
+          <img class="skillchecks" src="../assets/icons8-python-48.png">
+          <img class="skillchecks" src="../assets/icons8-django-48.png">
+          <img class="skillchecks" src="../assets/icons8-ruby-programming-language-50.png">
+          <img class="skillchecks" src="../assets/rails-logo.png">
+          <img class="skillchecks" src="../assets/icons8-command-line-48.png">
+          <img class="skillchecks" src="../assets/icons8-heroku-50.png">
+          <img class="skillchecks" src="../assets/icons8-git-squared-64.png">
 
         </div>
 <!--      </section>-->
@@ -82,6 +85,10 @@ export default {
   color: black;
 }
 
+.descrip{
+  padding: 2%;
+}
+
 .portfolioimg{
   height: 50%;
   width: 50%;
@@ -95,6 +102,28 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.skillchecks{
+  padding: 2%;
+  height: 75px;
+  width: 75px;
+}
+
+.skillchecks:hover{
+  background-color: #42b983;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1,1)      translateY(0); }
+  10%  { transform: scale(1.1,.9)   translateY(0); }
+  30%  { transform: scale(.9,1.1)   translateY(-100px); }
+  50%  { transform: scale(1.05,.95) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-7px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
 }
 </style>
