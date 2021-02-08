@@ -22,15 +22,22 @@
 
   <div class="skillsets">
 
-    <field><legend>Skills</legend>
-      <section> <!-- :class="`hero is-medium is-${carousel.color}`" -->
-        <div>
+    <fieldset class="fieldset2"><legend>Skills</legend>
+<!--      <section> &lt;!&ndash; :class="`hero is-medium is-${carousel.color}`" &ndash;&gt;-->
+        <div class="skillbox">
+          <img src="../assets/icons8-html-50.png">
+          <img src="../assets/icons8-css-50.png">
+          <img src="../assets/icons8-javascript-50.png">
+          <img src="../assets/icons8-vue-js-48.png">
+          <img src="../assets/icons8-jquery-50.png">
           <img src="../assets/icons8-python-48.png">
           <img src="../assets/icons8-django-48.png">
+          <img src="../assets/icons8-ruby-programming-language-50.png">
+
 
         </div>
-      </section>
-    </field>
+<!--      </section>-->
+    </fieldset>
 </div>
 
   </div>
@@ -55,10 +62,15 @@ export default {
 
 <style>
 
-.skillsets, .about{
+
+.skillsets, .about
+{
   padding: 5%;
 }
 
+.about, .name, .portfolioimg{
+  padding: 1%;
+}
 .home{
   padding-left: 20%;
   padding-right: 20%;
@@ -70,17 +82,19 @@ export default {
   color: black;
 }
 
-/*#fieldset1{*/
-/*  padding-left: 300px;*/
-/*  padding-right: 300px;*/
-/*}*/
-
 .portfolioimg{
-  height: 30%;
-  width: 30%;
+  height: 50%;
+  width: 50%;
 }
 
 .fieldset2{
   border: black solid 2px;
+}
+
+.skillbox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 </style>

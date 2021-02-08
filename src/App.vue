@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="has-background-link-dark"> <!--NOTE: CHANGE COLOR LATER-->
+  <div id="app"> <!--NOTE: CHANGE COLOR LATER-->
     <Nav/>
     <Icons/>
     <router-view/>
