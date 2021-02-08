@@ -21,8 +21,8 @@ export default {
 @media only screen and (min-width: 1024px) {
 
 .logo{
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 }
 
 .icons{
@@ -44,7 +44,6 @@ export default {
 }
 @media only screen and (max-width: 1023px) {
   .icons{
-    /*visibility: hidden;*/
     display: none;
   }
 }
