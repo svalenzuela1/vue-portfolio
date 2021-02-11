@@ -40,15 +40,23 @@ export default {
 
 
 .links{
-  height: 100px;
-  width: 100px;
+  height: 8%;
+  width: 8%;
   padding: 2%;
 }
-
 
 
 .carousel-image{
   width: 80%;
   height: 60%;
 }
+
+/*@media only screen and (max-width: 1024px) {*/
+/*.links{*/
+/*  height: 65px;*/
+/*  width: 65px;*/
+/*}*/
+
+/*}*/
+
 </style>
