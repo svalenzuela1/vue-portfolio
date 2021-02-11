@@ -59,7 +59,6 @@
             style: {
               backgroundColor: "#344189",
               color: "#efefee",
-              activeColor: 'white',
               fontSize: 30
             },
           }
