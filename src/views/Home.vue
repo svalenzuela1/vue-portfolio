@@ -67,7 +67,6 @@ export default {
 .home{
   padding-left: 20%;
   padding-right: 20%;
-  padding-bottom: 10%;
 }
 
 .name, p, legend{

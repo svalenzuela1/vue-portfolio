@@ -18,7 +18,7 @@
 
     <b-field horizontal><!-- Label left empty for spacing -->
       <p class="control">
-        <input type="submit" value="Send" v-on:click="sendEmail">
+        <input type="submit" value="Send" v-on:click="sendEmail" class="button is-link is-light">
       </p>
     </b-field>
         </form>

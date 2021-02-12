@@ -32,7 +32,7 @@ export default {
   color: black!important;
 }
 
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 900px) {
 
 
 .footer{
@@ -53,7 +53,17 @@ export default {
 }
 
 }
-@media only screen and (max-width: 1022px) {
+
+@media only screen and (min-width: 899px) and (max-width: 769px) {
+  .div1, .div2{ font-size: large}
+
+  .footerimg{
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .div1, .div2{
     display: flex;
     flex-direction: row;
