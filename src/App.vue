@@ -3,21 +3,23 @@
     <Nav :style="myStyle"/>
     <Icons/>
     <router-view/>
+    <Footer :style="myStyle"/>
   </div>
 </template>
 <script>
 import Nav from './components/Nav.vue'
 import Icons from './components/Icons.vue'
+import Footer from './components/Footer.vue'
+
 export default {
   name: 'App',
   components:{
-    Nav, Icons
+    Nav, Icons, Footer
   },
   data: function(){
     return {
       myStyle:{
-        backgroundColor: "#3e3ea8",
-        // color: "f5f5f7"
+        backgroundColor: "#3e3ea8"
       }
     }
   }

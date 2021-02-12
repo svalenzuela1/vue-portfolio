@@ -47,20 +47,9 @@
 </template>
 
 <script>
-// @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'Home',
-  data(){
-    return {
-      skills: [
-      "../assets/rails-logo.png",
-          "../assets/icons8-python-48.png"
-      ]
-    }
-  }
-}
+  name: 'Home'}
 </script>
 
 <style>
@@ -126,4 +115,21 @@ export default {
   64%  { transform: scale(1,1)      translateY(0); }
   100% { transform: scale(1,1)      translateY(0); }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1022px) {
+
+  .name, p, legend {
+    font-size: large;
+  }
+
+}
+
+@media only screen and (max-width: 599px) {
+
+  .name, p, legend {
+    font-size: medium;
+  }
+
+}
+
 </style>

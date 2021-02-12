@@ -71,15 +71,13 @@
 
 <style>
 
+.resume-link {
+  color: black!important;
+}
 
 @media only screen and (min-width: 1024px) {
 
   .navbar-item{
-    font-size: x-large;
-    color: black!important;
-  }
-
-  .resume-link {
     font-size: x-large;
     color: black!important;
   }

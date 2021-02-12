@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Projects from '../views/Projects.vue'
 import Contact from '../views/Contact.vue'
-import Successful from "../views/Successful"
+import Successful from "../components/Footer"
 
 Vue.use(VueRouter)
 
