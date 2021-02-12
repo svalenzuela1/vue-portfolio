@@ -18,18 +18,21 @@
         Home
       </b-navbar-item>
     </router-link>
+
       <router-link to="/projects">
       <b-navbar-item href="#">
         Projects
       </b-navbar-item>
       </router-link>
+
       <router-link to="/contact">
         <b-navbar-item href="#">
           Contact Me
         </b-navbar-item>
       </router-link>
+
       <b-navbar-item href="#">
-      <a target="_blank" class="resume-link" type="is-primary is-light" href="https://drive.google.com/file/d/1j9TtTRf6_Lxn7vdExCoWwUmqwPs3_-C1/view?usp=sharing">
+      <a target="_blank" class="resume-link" type="is-dark" href="https://drive.google.com/file/d/1j9TtTRf6_Lxn7vdExCoWwUmqwPs3_-C1/view?usp=sharing">
         Resume
       </a>
       </b-navbar-item>
@@ -71,19 +74,21 @@
 
 @media only screen and (min-width: 1024px) {
 
-
-  .navbar-item {
+  .navbar-item{
     font-size: x-large;
-    color: black;
+    color: black!important;
   }
 
   .resume-link {
     font-size: x-large;
+    color: black!important;
   }
 
   .nav {
     padding: 10%;
   }
+
+
 }
 @media only screen and (max-width: 1022px) {
   .nav{
@@ -93,5 +98,13 @@
   /*.navbar-item{*/
   /*  border: black solid 2px;*/
   /*}*/
+  .navbar-burger.burger:hover{
+    background-color: white;
+    color: black!important;
+  }
+
+  span{
+    color: black;
+  }
 }
 </style>

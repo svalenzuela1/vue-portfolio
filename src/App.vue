@@ -1,6 +1,6 @@
 <template>
-  <div id="app"> <!--NOTE: CHANGE COLOR LATER-->
-    <Nav/>
+  <div id="app" :style="myStyle"> <!--NOTE: CHANGE COLOR LATER-->
+    <Nav :style="myStyle"/>
     <Icons/>
     <router-view/>
   </div>
@@ -12,6 +12,14 @@ export default {
   name: 'App',
   components:{
     Nav, Icons
+  },
+  data: function(){
+    return {
+      myStyle:{
+        backgroundColor: "#3e3ea8",
+        // color: "f5f5f7"
+      }
+    }
   }
 }
 </script>
@@ -38,4 +46,5 @@ Nav{
   color: #2c3e50;
   font-weight: bold;
 }
+
 </style>
