@@ -37,7 +37,9 @@ export default {
 </script>
 
 <style>
-
+.projects{
+  font-family: -apple-system;
+}
 
 .links{
   height: 8%;

@@ -62,6 +62,7 @@ export default {
 
 .about, .name, .portfolioimg{
   padding: 1%;
+  font-weight: bolder;
 }
 .home{
   padding-left: 20%;
@@ -72,6 +73,7 @@ export default {
 .name, p, legend{
   font-size: x-large;
   color: black;
+  font-family: -apple-system;
 }
 
 .descrip{
@@ -84,7 +86,12 @@ export default {
 }
 
 .fieldset2{
-  border: black solid 2px;
+  border: black solid 3px;
+  font-family: -apple-system;
+}
+
+.fieldset2:nth-child(odd){
+  font-weight: bolder;
 }
 
 .skillbox{

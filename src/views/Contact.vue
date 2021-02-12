@@ -3,16 +3,16 @@
   <div class="contact-sheet">
     <section>
       <form class="contact-form" @submit.prevent="sendEmail">
-    <b-field horizontal label="Subject" type="is-danger" message="Please enter a subject">
+    <b-field horizontal label="SUBJECT" type="is-danger" message="Please enter a subject">
       <b-input v-model="subject" name="subject" expanded></b-input>
     </b-field>
 
-    <b-field horizontal label="From">
+    <b-field horizontal label="FROM">
       <b-input v-model="name" name="user_name" placeholder="Name" expanded></b-input>
       <b-input v-model="email" name="user_email" type="email" placeholder="nobody@nowhere.com" expanded></b-input>
     </b-field>
 
-    <b-field horizontal label="Message">
+    <b-field horizontal label="MESSAGE">
       <b-input v-model="message" type="textarea" name="message"></b-input>
     </b-field>
 
@@ -60,7 +60,11 @@ export default {
 .contact-sheet{
   padding-left: 10%;
   padding-right: 10%;
-  padding-bottom: 10%;
+}
+
+label{
+  color: black!important;
+  font-family: -apple-system;
 }
 </style>
 

@@ -2,7 +2,7 @@
   <div class="footer">
 
     <div class="div1">
-    <h1>MADE WITH <img src="../assets/icons8-vue-js-48.png"></h1>
+    <h1>MADE WITH <img src="../assets/icons8-vue-js-48.png" class="footerimg"></h1>
     </div>
 
     <div class="div2">
@@ -21,6 +21,21 @@ export default {
 <style>
 .footer{
   background-color: #3e3ea8!important;
+}
+
+.footerimg{
+  height: 50px;
+  width: 50px;
+}
+
+.div1, .div2{
+  color: black!important;
+}
+
+@media only screen and (min-width: 1023px) {
+
+
+.footer{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -37,8 +52,18 @@ export default {
   font-family: -apple-system;
 }
 
-.footerimg{
-  height: 50px;
-  width: 50px;
+}
+@media only screen and (max-width: 1022px) {
+  .div1, .div2{
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    justify-content: center;
+  }
+
+  .footerimg{
+    height: 30px;
+    width: 30px;
+  }
 }
 </style>
