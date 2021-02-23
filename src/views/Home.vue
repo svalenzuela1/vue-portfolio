@@ -16,7 +16,7 @@
           in Communication Studies as a first generation college graduate, I discovered my passion for
           bridging the gap between people by utilizing logical frameworks. During my senior year of college
           I secured a full scholarship with the TechHire Open Code program in their partnership with General Assembly
-          to pursue Software Development.</p>
+          to pursue software development.</p>
       </fieldset>
 <!--      </div>-->
     </div>
