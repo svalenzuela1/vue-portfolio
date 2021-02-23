@@ -11,11 +11,12 @@
         <h3 class="name">Hi, my name is </h3>
         <h1 class="name"> STEPHANIE VALENZUELA</h1>
       <fieldset class="fieldset2"> <legend> WHO AM I?</legend>
-        <p class="descrip"> A Junior Developer who is driven to make an impact in the tech community.
-          As a child of immigrants and a first generation College graduate, I joined
-          TechHire Open Code four days after graduating college to pursue Software Development. I am passionate about
-          logical thinking and problem-solving, constantly in pursuit of gaining more
-          knowledge.</p>
+        <p class="descrip">Software engineer who is interested in driving creative product development
+          through software solutions that are accessible and transformative. While completing my degree
+          in Communication Studies as a first generation college graduate, I discovered my passion for
+          bridging the gap between people by utilizing logical frameworks. During my senior year of college
+          I secured a full scholarship with the TechHire Open Code program in their partnership with General Assembly
+          to pursue Software Development.</p>
       </fieldset>
 <!--      </div>-->
     </div>
